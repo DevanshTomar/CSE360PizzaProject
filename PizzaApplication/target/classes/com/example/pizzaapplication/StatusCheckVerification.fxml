@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizzaapplication.LoginVerificationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f2d2d" height="77.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="662.0" />
+      <Label layoutX="124.0" layoutY="139.0" prefHeight="84.0" prefWidth="434.0" text="Order Number" textFill="#5f2d2d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="60.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderNumber" layoutX="196.0" layoutY="234.0" prefHeight="47.0" prefWidth="266.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="checkButton" layoutX="238.0" layoutY="308.0" mnemonicParsing="false" onAction="#checkButtonClicked" prefHeight="62.0" prefWidth="188.0" style="-fx-background-color: #5f2d2d; -fx-background-radius: 50;" text="CHECK" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

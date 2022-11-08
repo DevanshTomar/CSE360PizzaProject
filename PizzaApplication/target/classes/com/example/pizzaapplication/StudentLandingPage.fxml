@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizzaapplication.StudentLandingPageController">
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5f2d2d" height="77.0" stroke="BLACK" strokeType="INSIDE" width="662.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Welcome to">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="40.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="70.0" top="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Sun Devil Pizza" textFill="#f4d800">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="40.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <right>
+      <VBox prefHeight="237.0" prefWidth="353.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="orderHereButton" mnemonicParsing="false" onAction="#Controller" prefHeight="73.0" prefWidth="237.0" style="-fx-background-color: #5f2d2d; -fx-background-radius: 50;" text="ORDER HERE" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </VBox.margin>
+            </ToggleButton>
+            <ToggleButton fx:id="checkStatusButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Controller" prefHeight="73.0" prefWidth="237.0" style="-fx-background-color: #5f2d2d; -fx-background-radius: 50;" text="CHECK STATUS" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </VBox.margin>
+            </ToggleButton>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <ImageView fitHeight="204.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="20.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </left>
+</BorderPane>
